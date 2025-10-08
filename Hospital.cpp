@@ -53,19 +53,20 @@ int main(){
     cout<<"Enter number of patients (max 10): ";
     cin>>numpatients;
 
-   
+   int a_number=1;
+   int d_number;
    
     
     do{
 
-    int a_number=1;
+    
 
-    cout<<"Select a patient :";
+    cout<<"Select a patient number(ascending order start from 1) :";
     int p_number;
     cin>>p_number;
     
     // cout<<"Select a doctor :";
-    int d_number;
+    
     // cin>>d_number;
     
     // cout<<"Select an appointment :";
@@ -86,11 +87,11 @@ int main(){
         
 
     }
-    cout<<"Your appointment is setup with Doctor "<<d_number<<", you are Patient number3 "<<p_number<<" in Appointment slot "<<a_number<<endl;
+    cout<<"Your appointment is setup with Doctor "<<d_number<<", you are Patient number "<<p_number<<" in Appointment slot "<<a_number<<endl;
     a_number++;
     numpatients--;
 // }
-    }while(numpatients<10);
+    }while(numpatients<=10 || numpatients>0 );
     // cout<<"1. Patient"<<endl;
     // cout<<"2. Doctor"<<endl;
     // cout<<"3. Appointment"<<endl;
